@@ -4,7 +4,7 @@ dynamic loader module for webpack
 
 ``` javascript
 // The chunk is requested, when you require the bundle
-var component = 'home/index.rcx';
+var component = 'home/index.rcx'; // react-router component
 var waitForChunk = require('dynamic?ext=rcx!./app/' + component);
 
 // To wait until the chunk is available (and get the exports)
