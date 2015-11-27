@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # bundle loader for webpack
 
 ## Usage
@@ -37,3 +38,7 @@ require("bundle?lazy&name=my-chunk!./file.js");
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
+=======
+# dynamic-loader
+dynamic loader module for webpack
+>>>>>>> 007671a19987b047bc9e6314835d663484baa117
