@@ -1,0 +1,28 @@
+{
+  "name": "dynamic-loader",
+  "version": "1.0.0",
+  "author": "vnot",
+  "description": "dynamic loader module for webpack",
+  "keywords": [
+    "webpack",
+    "dynamic-loader"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weinot/dynamic-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weinot/dynamic-loader/issues"
+  },
+  "homepage": "https://github.com/weinot/dynamic-loader",
+  "scripts": {},
+  "maintainers": [
+    "vnot <weinotme@gmail.com>"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "loader-utils": "0.2.x"
+  },
+  "devDependencies": {}
+}
