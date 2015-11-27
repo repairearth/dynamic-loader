@@ -1,13 +1,11 @@
-<<<<<<< HEAD
-# bundle loader for webpack
-
+# dynamic loader for webpack
+dynamic loader module for webpack
 ## Usage
-
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
 ``` javascript
 // The chunk is requested, when you require the bundle
-var waitForChunk = require("bundle!./file.js");
+var component = 'home/index.rcx';
+var waitForChunk = require('dynamic?ext=rcx!./app/' + component);
 
 // To wait until the chunk is available (and get the exports)
 //  you need to async wait for it.
@@ -17,28 +15,3 @@ waitForChunk(function(file) {
 });
 // wraps the require in a require.ensure block
 ```
-
-The file is requested when you require the bundle loader. If you want it to request it lazy, use:
-
-``` javascript
-var load = require("bundle?lazy!./file.js");
-
-// The chunk is not requested until you call the load function
-load(function(file) {
-
-});
-```
-
-You may set name for bundle (`name` query parameter). See [documentation](https://github.com/webpack/loader-utils#interpolatename).
-
-``` javascript
-require("bundle?lazy&name=my-chunk!./file.js");
-```
-
-## License
-
-MIT (http://www.opensource.org/licenses/mit-license.php)
-=======
-# dynamic-loader
-dynamic loader module for webpack
->>>>>>> 007671a19987b047bc9e6314835d663484baa117
