@@ -16,7 +16,7 @@ module.exports.pitch = function(remainingRequest) {
 		throw new Error("file extension should be assigned via 'ext' param");
 	}
 
-	if (ext === remainingRequest.split('.').pop()) {
+	if (new RegExp(ext).test(remainingRequest)) {
 		return [
 			"var cbs = [], \n",
 			"	data;\n",
